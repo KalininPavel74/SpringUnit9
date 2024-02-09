@@ -1,0 +1,21 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: MS_Unit8_2
+  datasource:
+    name: tasks
+    generate-unique-name: false
+  data:
+    rest:
+      base-path: /default-api
+  thymeleaf:
+    cache: false
+  jpa:
+    show-sql: false
+    hibernate:
+      show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+

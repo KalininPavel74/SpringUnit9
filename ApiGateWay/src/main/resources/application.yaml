@@ -1,0 +1,16 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: MS_Unit8_1
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/**
+        - id: MS_Unit8_2
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/**
